@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'M04';
+    src: url('assets/fonts/m04.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'M04';
+    src: url('assets/fonts/m04b.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;   
+    background-color: rgb(90, 206, 249);
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    transition: display 5s ease-in-out;
+    /* display: none; */
+}
+
+#tuto_container {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    z-index: 600;
+    top: 40%;
+    left: 5%;
+    border-radius: 20px;
+    background-color: white;
+    padding-block: 50px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+    animation: whiteGlow 1.5s infinite alternate;
+}
+
+#welcome_container {
+    font-family: 'M04', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.letter {
+    display: inline; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.letter:nth-child(1) { color: green; }
+.letter:nth-child(2) { color: green; }
+.letter:nth-child(3) { color: white; }
+.letter:nth-child(4) { color: black; }
+.letter:nth-child(5) { color: rgb(0, 171, 23); }
+.letter:nth-child(6) { color: green; }
+.letter:nth-child(7) { color: rgb(185, 0, 127); }
+.letter:nth-child(8) { color: black; }
+.letter:nth-child(9) { color: teal; }
+.letter:nth-child(10) { color: cyan; }
+.letter:nth-child(11) { color: lime; }
+.letter:nth-child(12) { color: magenta; }
+.letter:nth-child(13) { color: rgb(10, 1, 255); }
+
+
+#goal_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}  
+
+.goal_letter {
+    font-family: 'M04', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    
+} 
+
+.go_home {
+    display: inline-block;
+    animation: colorChange 1s infinite alternate;
+    font-size: 20px;
+}
+
+#colon {
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#goal_icon {
+    width: 45px;
+    height: 45px;
+    background: url('../assets/images/day/goal.png') no-repeat center/contain;
+}
+
+#arrow_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+} 
+
+
+#arrow_key_icon {
+    width: 60px;
+    height: 60px;
+    background: url('../assets/images/day/arrow_key.png') no-repeat center/contain;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 165, 0); 
+    }
+    20% {
+        color: rgb(255, 140, 0); 
+    }
+    40% {
+        color: rgb(255, 120, 20); 
+    }
+    60% {
+        color: rgb(255, 100, 40);
+    }
+    80% {
+        color: rgb(255, 80, 60);
+    }
+    100% {
+        color: rgb(255, 94, 0);
+    }
+}
+
+#dino {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('../assets/images/general/dino2.png') no-repeat bottom/contain;
+    left: 100px;
+    bottom: -15px;
+    z-index: 999;
+    /* border: 2px solid red; */
+    transform: rotate(-30deg);
+    /* transition: bottom 0.5s ease-in-out, transform 1s ease-in-out; */
+}
+
+#wing {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('../assets/images/day/wing.png') no-repeat center/contain;
+    left: 110px;
+    bottom: 70px;
+    z-index: 998;
+    opacity: 0;
+    transform: scaleX(-1) rotate(-35deg);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+#home_container {
+    width: 400px;
+    height:400px;
+    position: relative;
+    margin-left: 50%;
+    animation: floatAnimation 5s ease-in-out infinite;
+}
+
+#home {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('../assets/images/day/home.png') no-repeat bottom/contain;
+    top: 22%;
+    left: 25%;
+    z-index: 900;
+    transform: rotateX(10deg);
+}
+
+/* Trees */
+#tree1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('../assets/images/day/tree1.png') no-repeat center/contain;
+    left: 50%;
+    top: 22%;
+}
+
+#land {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/images/day/floating_island.webp') no-repeat top/contain;
+    bottom: -40%;
+    z-index: 899;
+}
+
+
+#forest_container {
+    width: 400px;
+    height:400px;
+    position: relative;
+    margin-left: 65%;
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+#land1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/images/day/floating_island.webp') no-repeat top/contain;
+    z-index: 899;
+}
+
+#tree_1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('../assets/images/day/tree5.png') no-repeat center/contain;
+    left: 55%;
+    top: -8%;
+    z-index: 700;
+}
+
+#tree_4 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url('../assets/images/day/tree1.png') no-repeat center/contain;
+    left: 20%;
+    top: -35%;
+    z-index:701;
+}
+
+#arch {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('../assets/images/day/stone_arch.png') no-repeat center/contain;
+    left: 40%;
+    top: 30px;
+    z-index: 900;
+}
+
+#tree_5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('../assets/images/day/tree5.png') no-repeat center/contain;
+    left: 20%;
+    top: 58px;
+    z-index: 699;
+}
+
+#tree_52 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('../assets/images/day/tree5.png') no-repeat center/contain;
+    left: 10%;
+    top: -18%;
+    z-index: 901;
+}
+
+
+#cow_container {
+    width: 300px;
+    height:300px;
+    position: absolute;
+    top:50px;
+    right: 5%; 
+    animation: floatAnimation 3s ease-in-out infinite;
+    /* border:2px solid red; */
+}
+
+#land2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url('../assets/images/day/floating_island.webp') no-repeat top/contain;
+    top: 50px;
+    z-index: 899;
+}
+
+#cow {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url('../assets/images/general/cow.webp') no-repeat bottom/contain;
+    left: 20%;
+    top: 51px;
+    z-index: 899;
+}
+
+#cow1 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: url('../assets/images/general/cow1.webp') no-repeat bottom/contain;
+    left: 30%;
+    top: 65px;
+    z-index: 901;
+}
+
+#tree_2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('../assets/images/day/tree2.png') no-repeat center/contain;
+    left: 30%;
+    top: -10%;
+    z-index: 900;
+    transform: rotateY(10deg);
+}
+
+#cloud1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/images/day/cloud1.webp') no-repeat top/contain;
+    left: 45%;
+    top: 2%;
+    z-index: 500;
+}   
+
+#cloud2 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: url('../assets/images/day/cloud3.webp') no-repeat top/contain;
+    left: 5%;
+    top: 33%;
+    z-index: 500;
+} 
+
+#cloud3 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url('../assets/images/day/cloud4.webp') no-repeat top/contain;
+    left: 15%;
+    top: 10%;
+    z-index: 1000;
+} 
+
+
+#cloud4 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: url('../assets/images/day/cloud3.webp') no-repeat top/contain;
+    left: 45%;
+    top: 44%;
+    z-index: 1000;
+} 
+
+
+#tany {
+    position: absolute;
+    width: 100vw;
+    height: 200px; 
+    background: url('../assets/images/day/landscape1.webp') no-repeat center/cover;
+    left: 0;
+    bottom: 0;
+    z-index: 500;
+}
+
+.tree {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#explosion {
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: url('../assets/images/day/fight1.png') no-repeat center/cover;
+    left: 54%;
+    top: 7%;
+    z-index: 1000;
+}
+
+.explode {
+    animation: explodeAnimation 1s ease-out;
+}
+
+@keyframes explodeAnimation {
+    0% { transform: scale(0.5); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+}
+
+
+/* Animation */
+@keyframes floatAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes whiteGlow {
+    0% {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); 
+    }
+    50% {
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6), 
+                    0px 0px 30px rgba(255, 255, 255, 0.4); 
+    }
+    100% {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    }
+}
