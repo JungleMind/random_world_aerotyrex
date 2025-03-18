@@ -25,7 +25,7 @@ body {
     height: 100vh;
     overflow: hidden;
     transition: display 5s ease-in-out;
-    display: none;
+    /* display: none; */
 }
 
 #tuto_container {
