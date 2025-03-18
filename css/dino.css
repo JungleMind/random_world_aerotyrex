@@ -105,7 +105,7 @@ body {
 #goal_icon {
     width: 45px;
     height: 45px;
-    background: url('../assets/images/day/goal.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1T1pwEz_iBp78p7pBJu1VCNWXKv4G-T1_=w2940-h1596-iv1') no-repeat center/contain;
 }
 
 #arrow_container {
@@ -120,7 +120,7 @@ body {
 #arrow_key_icon {
     width: 60px;
     height: 60px;
-    background: url('../assets/images/day/arrow_key.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1pgomYw5l29Ft45HyY2Uf6_reh9aJSeWv=w2940-h1178-iv1') no-repeat center/contain;
 }
 
 @keyframes colorChange {
@@ -161,7 +161,7 @@ body {
     position: absolute;
     width: 150px;
     height: 150px;
-    background: url('../assets/images/day/wing.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1nTob-wo2nZtuGWRB72FcU9AwDAithCBh=w2940-h1178-iv1') no-repeat center/contain;
     left: 110px;
     bottom: 70px;
     z-index: 998;
@@ -183,7 +183,7 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url('../assets/images/day/home.png') no-repeat bottom/contain;
+    background: url('https://lh3.google.com/u/0/d/11ajw9hmGToYZJlRpZCB5rAc39kMjMLvo=w2940-h1178-iv1') no-repeat bottom/contain;
     top: 22%;
     left: 25%;
     z-index: 900;
@@ -195,7 +195,7 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url('../assets/images/day/tree1.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1WNyF_MHIS3rDq0PqbfUuh7HTqo8WwZT6=w2940-h1178-iv1') no-repeat center/contain;
     left: 50%;
     top: 22%;
 }
@@ -204,7 +204,7 @@ body {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: url('../assets/images/day/floating_island.webp') no-repeat top/contain;
+    background: url('https://lh3.google.com/u/0/d/1RoXcBSdiNxcwziO_TRvkwGgDI_ldeQY7=w2940-h1596-iv1') no-repeat top/contain;
     bottom: -40%;
     z-index: 899;
 }
@@ -222,7 +222,7 @@ body {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: url('../assets/images/day/floating_island.webp') no-repeat top/contain;
+    background: url('https://lh3.google.com/u/0/d/1RoXcBSdiNxcwziO_TRvkwGgDI_ldeQY7=w2940-h1596-iv1') no-repeat top/contain;
     z-index: 899;
 }
 
@@ -230,7 +230,7 @@ body {
     position: absolute;
     width: 150px;
     height: 150px;
-    background: url('../assets/images/day/tree5.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1arKIlHU1wMy8I4jOAzaO-C1eVxaY3KuQ=w2940-h1178-iv1') no-repeat center/contain;
     left: 55%;
     top: -8%;
     z-index: 700;
@@ -240,7 +240,7 @@ body {
     position: absolute;
     width: 300px;
     height: 300px;
-    background: url('../assets/images/day/tree1.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1WNyF_MHIS3rDq0PqbfUuh7HTqo8WwZT6=w2940-h1178-iv1') no-repeat center/contain;
     left: 20%;
     top: -35%;
     z-index:701;
@@ -250,7 +250,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: url('../assets/images/day/stone_arch.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1rbB9HCt-KX9gRSNgzfQNLdl5oPGAAbgg=w2940-h1178-iv1') no-repeat center/contain;
     left: 40%;
     top: 30px;
     z-index: 900;
@@ -260,7 +260,7 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
-    background: url('../assets/images/day/tree5.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1arKIlHU1wMy8I4jOAzaO-C1eVxaY3KuQ=w2940-h1178-iv1') no-repeat center/contain;
     left: 20%;
     top: 58px;
     z-index: 699;
@@ -270,7 +270,7 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url('../assets/images/day/tree5.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1arKIlHU1wMy8I4jOAzaO-C1eVxaY3KuQ=w2940-h1178-iv1') no-repeat center/contain;
     left: 10%;
     top: -18%;
     z-index: 901;
@@ -291,7 +291,7 @@ body {
     position: absolute;
     width: 300px;
     height: 300px;
-    background: url('../assets/images/day/floating_island.webp') no-repeat top/contain;
+    background: url('https://lh3.google.com/u/0/d/1RoXcBSdiNxcwziO_TRvkwGgDI_ldeQY7=w2940-h1596-iv1') no-repeat top/contain;
     top: 50px;
     z-index: 899;
 }
@@ -320,7 +320,7 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url('../assets/images/day/tree2.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1VggPWzXswU1lc-UFnvC3pRUxUGlq5cli=w2940-h1178-iv1') no-repeat center/contain;
     left: 30%;
     top: -10%;
     z-index: 900;
@@ -331,7 +331,7 @@ body {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: url('../assets/images/day/cloud1.webp') no-repeat top/contain;
+    background: url('https://lh3.google.com/u/0/d/1GiLQIXI__fdB2dFH1Md7vBN1tj2tRHXk=w2940-h1178-iv1') no-repeat top/contain;
     left: 45%;
     top: 2%;
     z-index: 500;
@@ -341,7 +341,7 @@ body {
     position: absolute;
     width: 600px;
     height: 600px;
-    background: url('../assets/images/day/cloud3.webp') no-repeat top/contain;
+    background: url('https://lh3.google.com/u/0/d/1-QKTexFLC5O4oFyepf69eyp89shNaFni=w2940-h1178-iv1') no-repeat top/contain;
     left: 5%;
     top: 33%;
     z-index: 500;
@@ -351,7 +351,7 @@ body {
     position: absolute;
     width: 500px;
     height: 500px;
-    background: url('../assets/images/day/cloud4.webp') no-repeat top/contain;
+    background: url('https://lh3.google.com/u/0/d/1Mg7a04sPaMneV1J1YzyJdwvJVYcxG2f-=w2940-h1178-iv1') no-repeat top/contain;
     left: 15%;
     top: 10%;
     z-index: 1000;
@@ -362,7 +362,7 @@ body {
     position: absolute;
     width: 350px;
     height: 350px;
-    background: url('../assets/images/day/cloud3.webp') no-repeat top/contain;
+    background: url('https://lh3.google.com/u/0/d/1-QKTexFLC5O4oFyepf69eyp89shNaFni=w2940-h1178-iv1') no-repeat top/contain;
     left: 45%;
     top: 44%;
     z-index: 1000;
@@ -373,7 +373,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 200px; 
-    background: url('../assets/images/day/landscape1.webp') no-repeat center/cover;
+    background: url('https://lh3.google.com/u/0/d/1NaV3dDNg4dOmmeE2PqdAuY_4A3Nw3f_W=w2940-h1178-iv1') no-repeat center/cover;
     left: 0;
     bottom: 0;
     z-index: 500;
@@ -390,7 +390,7 @@ body {
     position: absolute;
     width: 250px;
     height: 250px;
-    background: url('../assets/images/day/fight1.png') no-repeat center/cover;
+    background: url('https://lh3.google.com/u/0/d/1Cqa2IguhksFnbcsE6Owkc0T9mGZaLxI9=w2940-h1178-iv1') no-repeat center/cover;
     left: 54%;
     top: 7%;
     z-index: 1000;

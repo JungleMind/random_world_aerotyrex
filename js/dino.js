@@ -126,7 +126,7 @@ function triggerExplosion() {
     setTimeout(() => {
         explosion.style.display = 'none';
         launchDino();
-    }, 1000); 
+    }, 5000); 
 }
 
 function launchDino() {
