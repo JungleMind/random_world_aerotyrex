@@ -21,7 +21,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: url('../assets/images/space/back3.jpeg') no-repeat center/cover;
+    background: url('https://lh3.google.com/u/0/d/1EOW7xb6CcYxTVI5WP_tpEvnrZ5VUVaho=w2908-h1188-iv1') no-repeat center/cover;
     transition: display 5s ease-in-out;
 }
 
@@ -120,7 +120,7 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url('../assets/images/general/dino2.png') no-repeat bottom/contain;
+    background: url('https://lh3.google.com/u/0/d/1hdcF6rlCBJ1zr42MCbiK0aR_TP9iCNPK=w2940-h1596-iv1') no-repeat bottom/contain;
     left: 100px;
     bottom: 10px;
     z-index: 999;
@@ -132,7 +132,7 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    background: url('../assets/images/space/helmet2.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1RFirlZ5L0UWgniphV_0kwwgXobvq4H7C=w2908-h1188-iv1') no-repeat center/contain;
     left: 215px;
     bottom: 100px;
     z-index: 1000;
@@ -143,7 +143,7 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    background: url('../assets/images/space/boom.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/12vBVyM8tKVsmOGE_2cQHY53knNVKInZk=w2908-h1188-iv1') no-repeat center/contain;
     z-index: 1001;
     display: none;
 }
@@ -165,7 +165,7 @@
 #f_cow1 {
     width: 150px;
     height: 150px;
-    background: url('../assets/images/general/cow1.webp') no-repeat bottom/contain;
+    background: url('https://lh3.google.com/u/0/d/1XtNVlsl50fGoOXx3tGbKKwpppzwoBxxS=w2940-h1596-iv1') no-repeat bottom/contain;
     z-index: 999;
     /* border: 2px solid green; */
 }
@@ -174,7 +174,7 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    background: url('../assets/images/space/helmet2.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1RFirlZ5L0UWgniphV_0kwwgXobvq4H7C=w2908-h1188-iv1') no-repeat center/contain;
     left: 42px;
     bottom: 103px;
     z-index: 1000;
@@ -199,7 +199,7 @@
 #f_cow2 {
     width: 200px;
     height: 200px;
-    background: url('../assets/images/general/cow.webp') no-repeat bottom/contain;
+    background: url('https://lh3.google.com/u/0/d/1vJ7HI0FjQ4PT0lNAtwqOzxG8kJ5uYp4u=w2940-h1218-iv1') no-repeat bottom/contain;
     z-index: 999;
     /* border: 2px solid red; */
 }
@@ -208,7 +208,7 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    background: url('../assets/images/space/boom.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/12vBVyM8tKVsmOGE_2cQHY53knNVKInZk=w2908-h1188-iv1') no-repeat center/contain;
     z-index: 1001;
     display: none;
 }
@@ -217,7 +217,7 @@
     position: absolute;
     width: 70px;
     height: 70px;
-    background: url('../assets/images/space/gas_mask.png') no-repeat center/contain;
+    background: url('https://lh3.google.com/u/0/d/1fnwYTzNEGfEjtrG3218hZw-xttm_eHAk=w2908-h1188-iv1') no-repeat center/contain;
     left:0;
     bottom: 35px;
     z-index: 1000;
