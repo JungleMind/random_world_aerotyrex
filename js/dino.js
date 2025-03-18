@@ -20,6 +20,72 @@ let y1 = 10;
 const maxWidth = window.innerWidth - 200;
 const maxHeight = window.innerHeight - 200;
 
+window.addEventListener('load', () => {
+    Swal.fire({
+        text: 'Do you want to play music in the background ?',
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonColor: 'rgb(0, 171, 23)',
+        cancelButtonColor: 'silver',
+        confirmButtonText: 'Of course',
+        cancelButtonText: 'Cancel',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.querySelector('.song').play();
+        }
+    });
+});
+
+let isFacingRight = true;
+
+function moveDino(direction) {
+    if (direction === "left") {
+        dino.style.transform = "scaleX(-1) rotate(-30deg)";
+        wing.style.transform = 'scaleX(1) rotate(-35deg) translateY(0)';
+        wing.style.left = (x + 40) + 'px';
+        isFacingRight = false;
+    } else if (direction === "right") {
+        dino.style.transform = "scaleX(1) rotate(-30deg)";
+        wing.style.transform = 'scaleX(-1) rotate(-35deg) translateY(0)';
+        wing.style.left = (x + 10) + 'px'; 
+        isFacingRight = true;
+    } else if (direction === 'up') {
+        if (isFacingRight) {
+            wing.style.left = (x + 10) + 'px';
+        } else {
+            wing.style.left = (x + 40) + 'px'; 
+        } 
+    } else if (direction === 'down') {
+        if (isFacingRight) {
+            wing.style.left = (x + 10) + 'px';
+        } else {
+            wing.style.left = (x + 40) + 'px'; 
+        } 
+    }
+}
+
+
+function moveDino1(direction) {
+    if (direction === "left") {
+        dino1.style.transform = "scaleX(-1) rotate(-30deg)";
+        helmet.style.transform = 'scaleX(-1) rotate(-35deg)';
+        helmet.style.left = (x1 - 5) + 'px';
+        isFacingRight = false;
+    } else if (direction === "right") {
+        dino1.style.transform = "scaleX(1) rotate(-30deg)";
+        helmet.style.transform = 'scaleX(1) rotate(-35deg)';
+        isFacingRight = true;
+    } else if (direction === 'up') {
+        if (!isFacingRight) {
+            helmet.style.left = (x1 - 5) + 'px';
+        }
+    } else if (direction === 'down') {
+        if (!isFacingRight) {
+            helmet.style.left = (x1 - 5) + 'px';
+        }
+    }
+}
+
 document.addEventListener('keydown', (event) => {
     const display = window.getComputedStyle(gameContainer).display;
     if (display == 'none'){
@@ -33,6 +99,16 @@ document.addEventListener('keydown', (event) => {
 
         helmet.style.left = (x1 + 115) + 'px';
         helmet.style.bottom = (y1 + 90) + 'px';
+
+        if (event.key === "ArrowLeft") {
+            moveDino1("left");
+        } else if (event.key === "ArrowRight") {
+            moveDino1("right");
+        } else if (event.key === "ArrowUp") {
+            moveDino1("up");
+        } else if (event.key === "ArrowDown") {
+            moveDino1("down");
+        }
 
         checkCollisionWithCow1();
         checkCollisionWithCow2();
@@ -49,12 +125,20 @@ document.addEventListener('keydown', (event) => {
         wing.style.left = (x + 10) + 'px';
         wing.style.bottom = (y + 85) + 'px';
 
+        if (event.key === "ArrowLeft") {
+            moveDino("left");
+        } else if (event.key === "ArrowRight") {
+            moveDino("right");
+        } else if (event.key === "ArrowUp") {
+            moveDino("up");
+        } else if (event.key === "ArrowDown") {
+            moveDino("down");
+        }
+
         if (y >= 20) {
             wing.style.opacity = '1';  
-            wing.style.transform = 'scaleX(-1) rotate(-35deg) translateY(0)'; 
         } else {
-            wing.style.opacity = '0';  
-            wing.style.transform = 'scaleX(-1) rotate(-35deg) translateY(10px)';
+            wing.style.opacity = '0'; 
         }
 
         checkCollision();
@@ -122,9 +206,13 @@ function checkCollisionWithCow2() {
 function triggerExplosion() {
     explosion.style.display = 'block';
     explosion.classList.add('explode'); 
+    document.querySelector('.song').pause();
+    document.querySelector('.boomsong').play();
 
     setTimeout(() => {
         explosion.style.display = 'none';
+        document.querySelector('.boomsong').pause();
+        document.querySelector('.song').play();
         launchDino();
     }, 5000); 
 }
